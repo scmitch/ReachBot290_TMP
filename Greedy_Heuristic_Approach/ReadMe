@@ -3,6 +3,8 @@ The simulation can be run from the "sim_ReachBot_astar.ipynb" notebook. This sim
 
 For the A* planning, I repurposed my old code from AA274a Robotic Autonomy. The "utils.py" file is unchanged from how it's provided to students in the course. I did have to make modifications to the starter code in "P1_astar.py", such as adding the obstacle inflation and also passing figure objects in order to make the ReachBot steps and the A* path plot on the same grid. I also fixed what I think was a bug, to now make the paths scale properly if you use the optional "res" parameter. In the end though, I didn't wind up using that feature. I did not have to modify any of the code that was assigned as part of the AA274a assignment. Stephanie: If you were to reuse any parts of the code in "P1_astar.py", you might as well replace my student-written functions (everywhere it says ### Code starts here ###) with those from the assignment's solution manual. My old functions definitely work, but they may not be as robust and some were inefficiently hardcoded in the mindset of "if it works, it works" (the get_neighbors function comes to mind).
 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 Things Left to Do:
 1. A constraint is enforced so that ReachBot cannot place its body or feet inside an obstacle using the astar occupancy grid, but it does not yet check to make sure the line segment connecting the body to a valid foot location is also not cutting through the obstacle. This should be a quick fix, using the same line intersection checks (Bresenham algorithm) that I used for checking line-of-sight to potential subgoals.
 
