@@ -1,2 +1,5 @@
 The flashlight example code was shared with me by Stephanie, although it was written by someone else in the Stanford Autonomous Systems Lab (ASL). 
 This is what I based my ReachBot STRIPS implementation off of. 
+
+See Page 60 of Planning Algorithms: Chapter 2 Discrete Planning by Steven M. Lavalle.
+Viewable here: http://lavalle.pl/planning/ch2.pdf
