@@ -1,7 +1,13 @@
 The STRIPS code here is a rudimentary implementation of a breadth-first search for ReachBot, based on the code in the Flashlight Example folder.
 
-I didn't develop this code much further when I found out how computational intractable it is for problems of meaningful size, without heavy modification. For example, the state just represents the four feet - the body is not included yet.
+I didn't develop this code much further when I found out how computational intractable it is for problems of meaningful size, without heavy modification. 
+For example, the state just represents the four feet - the body is not included yet.
 
-The current example is on the smallest possible grid - a 2x4 grid, where ReachBot's four feet begin in the left four squares of the grid and whose goal is the right four squares of the grid. Larger grids grow in computation exponentially, so I have not run many grid sizes larger than this. Complexity will go down a bit as more constraints are added, restricting the number of legal moves from each node.
+The current example is on the smallest possible grid - a 2x4 grid, where ReachBot's four feet begin in the left four squares of the grid and whose goal 
+is the right four squares of the grid. Larger grids grow in computation exponentially, so I have not run many grid sizes larger than this. Complexity 
+will go down a bit as more constraints are added, restricting the number of legal moves from each node.
 
-The current STRIPS implementation only takes into account a few basic constraints for ReachBot. It makes sure that two feet will not occupy the same grid square, and it prevents the same foot from moving twice in a row on the decision tree (Allowing such nodes would effectively waste an action – if a foot is capable of moving to a more optimal position from any given configuration, then it would just move all the way there in one step). The rest of the task constraints for ReachBot have now been flushed out in the Greedy Heuristic Approach, and should easily be able to be copied into the STRIPS implementation.
+The current STRIPS implementation only takes into account a few basic constraints for ReachBot. It makes sure that two feet will not occupy the same grid 
+square, and it prevents the same foot from moving twice in a row on the decision tree (Allowing such nodes would effectively waste an action – if a foot 
+is capable of moving to a more optimal position from any given configuration, then it would just move all the way there in one step). The rest of the task 
+constraints for ReachBot have now been flushed out in the Greedy Heuristic Approach, and should easily be able to be copied into the STRIPS implementation.
