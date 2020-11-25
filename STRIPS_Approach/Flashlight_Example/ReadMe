@@ -1,4 +1,5 @@
-The flashlight example code was shared with me by Stephanie, although it was written by someone else in the Stanford Autonomous Systems Lab (ASL). 
+The flashlight example code was shared with me by Stephanie, although it was written by someone else in the Stanford Autonomous Systems Lab (ASL).
+Original code is here: https://github.com/acauligi/astrobee-tamp/blob/master/misc/strips.ipynb
 This is what I based my ReachBot STRIPS implementation off of. 
 
 See Page 60 of Planning Algorithms: Chapter 2 Discrete Planning by Steven M. Lavalle.
